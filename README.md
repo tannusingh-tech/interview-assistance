@@ -382,29 +382,6 @@ The assignment brief targets **under 3 seconds** from the end of the question to
 4. **Desktop Overlay (Electron / Transparent Floating HUD):**
    - Wrap the dashboard in a frameless, transparent, click-through desktop overlay that stays on top during full-screen Zoom or Google Meet calls.
 
-## Demo Script (3 to 5 Minutes)
-
-Follow this step-by-step walkthrough to record the 3-5 minute demo video:
-
-1. **Introduction & System Health (0:00 - 0:45)**
-   - Show the dashboard at `http://localhost:5173`. Point out the **Server Online** indicator, **Status Badge** (Idle), **Audio Source** toggle (`Mic` vs `System / Tab Audio`), and **Answer Mode** selector (`Concise`, `STAR Method`, `Detailed`).
-   - Expand the **Interview Context** accordion. Point out the pre-filled Resume and Job Description.
-2. **Question 1: Elevator Pitch / Background (0:45 - 1:45)**
-   - Mode set to `Concise`. Click **Start session** (Status transitions: `Requesting Audio` → `Listening`).
-   - Speak aloud into the microphone: *"Tell me about yourself and your experience with full-stack systems."*
-   - Observe the live transcript appear, question detected immediately in **Detected question**, status switch to **Thinking…** then **Answering…**, and the answer stream in token-by-token.
-   - Highlight the **Latency Badge** showing `TTFT: <2s (<3s target met ✓)`. Click **Copy Answer**.
-3. **Question 2: Behavioral Question in STAR Mode (1:45 - 2:45)**
-   - Switch Answer Mode to **STAR Method**.
-   - Speak into the microphone: *"Can you describe a challenging technical disagreement you had with a team member and how you resolved it?"*
-   - Observe how the suggested answer formats automatically into **Situation**, **Task**, **Action**, and **Result** referencing the candidate's resume.
-4. **Question 3: Technical Deep Dive & Manual Input Fallback (2:45 - 3:45)**
-   - Switch Answer Mode to **Detailed**.
-   - In the **Manual question test** panel, click the chip *"How do you design scalable backend architectures?"* and click **Generate answer**.
-   - Show that the active Question and Suggested Answer panels update immediately with full technical depth and measured latency, even without a live microphone.
-5. **Session Wrap-Up (3:45 - 4:00)**
-   - Click **Stop session**. Show that audio tracks are released and the session transitions cleanly to `Idle`.
-
 ## Production Risks (< 300 Words)
 
 **Question:** *"What are the top 3 risks of taking this POC to production, and how would you address them?"*
